@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon.png">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="div-logo">
+            <img src="../img/adidas-superstar.png" alt="adidas-superstar logo">
+        </div>
+        <div class="div-center">
+            <h1>SneakersHeads</h1>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">home</a></li>
+                    <li><a href="sneakers.html">sneakers</a></li>
+                    <li><a href="releases.html">lanzamientos</a></li>
+                    <li><a href="videos.html">videos</a></li>
+                    <li><a href="top.html">top</a></li>
+                    <li><a href="contact.html">contacto</a></li>
+                </ul>
+            </nav>
+        <h2>Contacto</h2>
+    </header>
+    <main class="indexContact">
+        <form action="enviar.php" method="post" enctype="text/plain">
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" placeholder="Ingresa tu nombre" required><br><br>
+            <label for="apellido">Apellido:</label>
+            <input type="text" name="apellido" placeholder="Ingresa tu apellido" required><br><br>
+            <label for="telefono">Telefono:</label>
+            <input type="number" name="telefono" placeholder="Ingresa tu Telefono"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" placeholder="Ingresa tu Email" required><br><br>
+    
+            <label for="marca">Marca Favorita?</label><br>
+            <input type="radio" name="marca">
+            <label for="marca">Nike</label>
+            <input type="radio" name="marca">
+            <label for="marca">Adidas</label>
+            <input type="radio" name="marca">
+            <label for="marca">Puma</label>
+            <input type="radio" name="marca">
+            <label for="marca">New Balance</label>
+            <input type="radio" name="marca">
+            <label for="marca">Otra</label><br><br>
+    
+            <label for="newsletter">Desea recibir el Newsletter con los ultimos lanzamientos?</label>
+            <input type="checkbox" name="lenguaje"><br><br>
+    
+            <label for="comentarios">Comentarios:</label><br>
+            <textarea name="comentarios" cols="30" rows="10" placeholder="Ingrese un comentario"></textarea><br>
+            <div>
+                <input class="buttonFooter" type="submit" value="Enviar">
+                <input class="buttonFooter" type="reset" value="Borrar">
+            </div>
+        </form>
+    </main>
+    <footer>
+        <div class="footerBlock">
+            <div class="lista">
+                <ul>
+                    <li><a href="../index.html">home</a></li>
+                    <li><a href="sneakers.html">sneakers</a></li>
+                    <li><a href="releases.html">lanzamientos</a></li>
+                    <li><a href="videos.html">videos</a></li>
+                    <li><a href="top.html">top</a></li>
+                    <li><a href="contact.html">contacto</a></li>
+                </ul>
+            </div>
+            <div class="linksFooter">
+                <div class="socialMedia">
+                    <a href="https://www.facebook.com/" target="_blank"><img class="imgFooter" src="https://img.icons8.com/ios-filled/60/000000/facebook-new.png" alt="facebook"></a>
+                </div>
+                <div class="socialMedia">
+                    <a href="https://www.instagram.com/" target="_blank"><img class="imgFooter" src="https://img.icons8.com/ios-glyphs/60/000000/instagram-new.png"" alt="instagram"></a>
+                </div>
+                <div class="socialMedia">
+                    <a href="https://www.twitter.com/" target="_blank"><img class="imgFooter" src="https://img.icons8.com/ios-filled/60/000000/twitter.png" alt="twitter"></a>
+                </div>
+                <div class="socialMedia">
+                    <a href="https://www.youtube.com/" target="_blank"><img class="imgFooter" src="https://img.icons8.com/ios-filled/60/000000/youtube-play.png" alt="youtube"></a>
+                </div>
+                <div class="socialMedia">
+                    <a href="https://web.whatsapp.com/" target="_blank"><img class="imgFooter" src="https://img.icons8.com/ios-filled/30/000000/whatsapp--v1.png" alt="whatsapp"></a>
+                </div>
+            </div>
+            <div class="logosFooter">
+                <img class="footerLogo" src="../img/adidas-superstar.png" alt="adidas-superstar logo">
+                <p>SneakersHeads</p>
+                <a href="https://github.com/Pusty29" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="github"></a>
+            </div>
+        </div>
+        <p class="copyright">© 2022 sneakerheads</p>
+    </footer>
+</body>
+</html>

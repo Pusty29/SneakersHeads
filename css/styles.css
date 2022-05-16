@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Righteous&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-family: 'Righteous', cursive;
+}
+
+/*--------HEADER--------*/
+header{
+    font-weight: bold;
+    text-align: center;
+    background-size: cover;
+    background-color: #063346;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.div-logo{
+    display: flex;
+    align-items: center;
+    padding-left: 3vh;
+}
+.div-logo img{
+    height: 10vh;
+    width: 12vw;
+}
+.div-center{
+    justify-content: center;
+}
+
+header h1{
+    color: goldenrod;
+    font-size: 60px;
+}
+
+header h2{
+    color: goldenrod;
+}
+
+header nav{
+    background-color: #063346;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 10px;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    text-transform: capitalize;
+    font-style: italic;
+}
+nav a:hover{
+    color: goldenrod;
+}
+
+@media only screen and (max-width: 768px) {
+    header{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .div-logo{
+        display: flex;
+        justify-content: center;
+        padding-left: 0;
+    }
+    .div-logo img{
+        height: 8vh;
+        width: 30vw;
+    }
+    header h1{
+        color: goldenrod;
+        font-size: 40px;
+    }
+    nav ul li{
+        display: inline-block;
+    }
+    nav a{
+        font-size: 25px;
+    }
+}
+@media only screen and (max-width: 480px) {
+    header{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .div-logo{
+        display: flex;
+        justify-content: center;
+        padding-left: 0;
+    }
+    .div-logo img{
+        height: 7vh;
+        width:40vw;
+    }
+    header h1{
+        font-size: 35px;
+    }
+    header h2{
+        font-size: 25px;
+    }
+    nav ul li{
+        display: block;
+    }
+    nav a{
+        font-size: 20px;
+    }
+}
+/*--------HEADER--------*/
+
+/*--------INDEX BODY--------*/
+.indexBody{
+    display: grid;
+    grid-template-rows: 1fr 5.5fr 1fr;
+}
+@media only screen and (max-width: 768px) {
+    .indexBody{
+        display: grid;
+        grid-template-rows: 1fr 4fr 1fr;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .indexBody{
+        display: grid;
+        grid-template-rows: 1fr 2.5fr 1fr;
+    }
+}
+/*--------INDEX BODY--------*/
+
+/*--------INDEX MAIN--------*/
+.indexMain{
+    display: block;
+    background-color: black;
+    color:goldenrod;
+    background-image: url(https://cdn.lifestyleasia.com/wp-content/uploads/2019/08/19171800/THE-TEN.jpg);
+    background-size:100% 100%;
+    background-position:center;
+}
+/*--------INDEX MAIN--------*/
+
+/*--------SNEAKERS MAIN--------*/
+.indexSneakers{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: white;
+}
+
+.imgSneakers{
+    width: 80%;
+    height: 300px;
+    margin: 15px;
+}
+
+@media only screen and (max-width: 768px) {
+    .indexSneakers{
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+    }
+    .imgSneakers{
+        width: 80%;
+        height: 300px;
+        margin: 30px;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .indexSneakers{
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+    }
+    .imgSneakers{
+        width: 80%;
+        height: 300px;
+        margin: 30px;
+    }
+}
+/*--------SNEAKERS MAIN--------*/
+
+/*--------RELEASES MAIN--------*/
+.indexReleases{
+    display: flex;
+    flex-direction: column;
+    background-color: #063346;
+    height: 100%;
+    color:white;
+    align-content: space-between;
+}
+h2{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.releaseNike{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.releaseAdidas{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.sneakers{
+    padding-bottom: 10px;
+    margin: 10px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+.sneakers:hover {
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.8);
+}
+
+.sneakerImg{
+    width: 500px;
+    height: 300px;
+}
+
+/*--------RELEASES MAIN--------*/
+
+/*--------VIDEOS MAIN--------*/
+.indexVideos{
+padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+    background-color: white;
+}
+iframe{
+    width: 100%;
+    height: 315px;
+    display: flex;
+    justify-self: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .indexVideos{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .indexVideos{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+}
+/*--------VIDEOS MAIN--------*/
+
+/*--------TOP MAIN--------*/
+.indexTop{
+    display: flex;
+    flex-direction: column;
+    background-color: #063346;
+    color:white;
+    align-content: space-between;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+h3{
+    padding-top: 30px;
+}
+h4{
+    padding-bottom: 10px;
+}
+
+.imgTop{
+    width: 1200px;
+    height: 700px;
+    margin: 10px;
+    transition: box-shadow 0.2s ease-in-out;
+}
+.imgTop:hover {
+    box-shadow: 0 50px 100px rgba(255, 255, 255, 0.8);
+}
+
+.top3{
+    width: 1200px;
+    height: 700px;
+    margin: 10px;
+    transition: box-shadow 0.2s ease-in-out;
+}
+.top3:hover {
+    box-shadow: 0 50px 100px rgba(218, 165, 32, 0.8);
+}
+
+.subir{
+    height: 50px;
+    width: 50px;
+    background-color: goldenrod;
+    border: 2px solid white;
+    position: fixed;
+    right: 20px;
+    bottom: 200px;
+    border-radius: 50%;
+    text-align: center;
+}
+.subir i{
+    color: white;
+    font-size: 25px;
+    line-height: 50px;
+    font-weight: bold;
+    text-shadow: 0 0 10px black;
+}
+/*--------TOP MAIN--------*/
+
+/*--------CONTACT MAIN--------*/
+.indexContact{
+    padding-top: 20px;
+    display: flex;
+    height: 75vh;
+    justify-content: center;
+    text-align: center;
+    background-color: #063346;
+    color:goldenrod;
+    background-image: url(https://wallpaperaccess.com/full/1231744.jpg);
+    background-size:cover;
+    background-position:center;
+}
+form{
+    padding-top: 10px;
+    width: 30vw;
+    height: 48vh;
+    border: 1px solid black;
+    background:rgba(0, 0, 0, 0.8);
+}
+.buttonFooter{
+    padding: 5px;
+}
+/*--------CONTACT MAIN--------*/
+
+/*--------FOOTER--------*/
+footer{
+    background-color: goldenrod;
+    text-transform: capitalize;
+    height: 100%;
+}
+footer .footerBlock{
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+footer .lista{
+    padding-left: 30px;
+}
+.lista ul li{
+    list-style: none;
+}
+.lista a{
+    text-decoration: none;
+    color: #063346;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+footer a:hover{
+    color: white;
+}
+
+footer .linksFooter{
+    align-self: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 30vw;
+    justify-content: space-around;
+}
+.linksFooter .socialMedia{
+    align-self: flex-end;
+}
+.socialMedia .imgFooter{
+    height: 45px;
+    width: 45px;
+}
+
+footer .logosFooter{
+    text-align: center;
+}
+footer .logosFooter img{
+    height: 50px;
+    width: 100px;
+}
+footer .logosFooter p{
+    font-size: 15px;
+    padding-bottom: 5px;
+}
+footer .logosFooter a img{
+    height: 40px;
+    width: 40px;
+}
+
+footer .copyright{
+    clear: both;
+    text-align: center;
+    font-size: 15px;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+}
+/*--------FOOTER--------*/
